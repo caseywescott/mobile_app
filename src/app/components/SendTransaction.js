@@ -1,14 +1,3 @@
-// First, ensure this is in your _app.js or main layout:
-// import { ChakraProvider } from '@chakra-ui/react'
-// 
-// function App({ Component, pageProps }) {
-//   return (
-//     <ChakraProvider>
-//       <Component {...pageProps} />
-//     </ChakraProvider>
-//   )
-// }
-
 import React, { useCallback, useState } from 'react';
 import { useAccount, useExplorer } from "@starknet-react/core";
 import { 
