@@ -105,49 +105,49 @@ function Home() {
           />
           <SendTransaction
             amount={2}
-            contractAddress={contractAddress}
+            contractAddress={sepoliaAddress}
             abi={contractAbi}
             buttonLabel="Accelerandos"
           />
           <SendTransaction
             amount={3}
-            contractAddress={contractAddress}
+            contractAddress={sepoliaAddress}
             abi={contractAbi}
             buttonLabel="Crackle"
           />
           <SendTransaction
             amount={4}
-            contractAddress={contractAddress}
+            contractAddress={sepoliaAddress}
             abi={contractAbi}
             buttonLabel="Melody"
           />
           <SendTransaction
             amount={5}
-            contractAddress={contractAddress}
+            contractAddress={sepoliaAddress}
             abi={contractAbi}
             buttonLabel="Boom"
           />
           <SendTransaction
             amount={6}
-            contractAddress={contractAddress}
+            contractAddress={sepoliaAddress}
             abi={contractAbi}
             buttonLabel="Drone"
           />
           <SendTransaction
             amount={7}
-            contractAddress={contractAddress}
+            contractAddress={sepoliaAddress}
             abi={contractAbi}
             buttonLabel="Chords"
           />
           <SendTransaction
             amount={8}
-            contractAddress={contractAddress}
+            contractAddress={sepoliaAddress}
             abi={contractAbi}
             buttonLabel="Percussive"
           />
           <SendTransaction
             amount={9}
-            contractAddress={contractAddress}
+            contractAddress={sepoliaAddress}
             abi={contractAbi}
             buttonLabel="Change Chords"
           />
