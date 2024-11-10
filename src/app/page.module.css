@@ -151,7 +151,7 @@
   align-items: center;
   left: 0;
   top: 0;
-  z-index: 99;
+  z-index: 2;
   width: 100vw;
   height: 100vh;
 }
@@ -195,7 +195,7 @@
   color: black;
 }
 .connectbtn {
-  background-color: #0fafdf;
+  background-color: #7a7b7b;
   cursor: pointer;
   border: none;
   border-radius: 8px;
