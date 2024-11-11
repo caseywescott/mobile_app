@@ -1,10 +1,8 @@
 import ControllerConnector from "@cartridge/connector";
-import { shortString } from "starknet";
  
 const ETH_TOKEN_ADDRESS =
     "0x049d36570d4e46f48e99674bd3fcc84644ddd6b96f7c741b1562b82f9e004dc7";
 
-    // Contract address
 const contractAddress =
 "0x05a7ee0a287951464bcdfaa8c25194714f458106a0af16339723ce0a2ab36fad";
 

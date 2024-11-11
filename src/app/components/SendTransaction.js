@@ -59,6 +59,7 @@ function SendTransaction({ amount, contractAddress, abi, buttonLabel }) {
 
         setTransactionHash(transaction_hash);
         setTransactionResult({ status: 'Success' });
+        setIsPolling(false)
 
         // Show success toast with truncated hash
         const truncatedHash = `${transaction_hash.slice(0, 6)}...${transaction_hash.slice(-4)}`;
@@ -69,7 +70,7 @@ function SendTransaction({ amount, contractAddress, abi, buttonLabel }) {
         );
 
       } catch (err) {
-        console.error('Transaction failed:', err);
+        console.error('Transaction failed:', err || undefined);
         setError('Transaction failed. Please try again.');
         setIsPolling(false);
         
@@ -84,7 +85,7 @@ function SendTransaction({ amount, contractAddress, abi, buttonLabel }) {
   );
 
   return (
-    <VStack spacing={4} align="stretch">
+    <VStack spacing={4} align="stretch" >
       <Button 
         onClick={() => sendTransaction(amount)}
         colorScheme="blue"
@@ -106,9 +107,17 @@ function SendTransaction({ amount, contractAddress, abi, buttonLabel }) {
           borderRadius="md" 
           borderWidth="1px"
           borderColor="gray.200"
+          background={'white'}
+          textColor={'black'}
+          width={150}
         >
-          <Text fontSize="sm">
-            Transaction Hash: {transactionHash}
+          <Text fontSize="sm" color={'blue'} textDecoration={'underline'} >
+            <a href={explorer.transaction(transactionHash)}
+            target='_blank'
+            rel='noreferrer'
+            >
+              view transaction
+            </a>
           </Text>
           <Text fontSize="sm" mt={2}>
             Status: {transactionResult?.status || 'Pending'}
