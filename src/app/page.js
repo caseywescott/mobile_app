@@ -53,14 +53,6 @@ function Home() {
     initController();
   }, []);
 
-  const connectWallet = async () => {
-    const connectedAccount = await connector.connect();
-    setAccount(connectedAccount);
-  };
-
-  const disconnectWallet = () => {
-    setAccount(null);
-  };
 
   return (
     <main className={styles.main}>
