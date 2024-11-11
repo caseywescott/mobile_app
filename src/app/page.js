@@ -27,7 +27,7 @@ function Home() {
     <main className={styles.main}>
       <div className={styles.description}>
       <a href="https://mobile-app-coral.vercel.app/" className={styles.controllerLink} target="_blank" rel="noopener noreferrer">
-        Connect via Controller
+        Connect Controller
       </a>
         <div className={styles.logoContainer}>
           <span>Autonomous Audio</span>
